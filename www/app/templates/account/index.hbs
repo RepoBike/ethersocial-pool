@@ -5,10 +5,10 @@
     <table class="table table-condensed table-striped">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Hashrate (rough, short average)</th>
-          <th>Hashrate (accurate, long average)</th>
-          <th>Last Share</th>
+          <th>워커명</th>
+          <th>최근해시량</th>
+          <th>평균해시량</th>
+          <th>최근활동</th>
         </tr>
       </thead>
       <tbody>
@@ -24,16 +24,14 @@
     </table>
   </div>
   {{else}}
-    <h3>No workers online</h3>
+    <h3>마이너 없음</h3>
   {{/if}}
   <div class="alert alert-info" role="alert">
     <span class="sr-only">Notice:</span>
-    Your average hashrate will be smoothly adjusted until you have shares to fullfill estimation window.<br/>
-    There are two windows, long and short, first is equal to about 30 minutes and long window is usually equal to 3 hours.<br/>
-    Dead (sick) workers will be highlighted in a table of workers if they didn't submit a share for 1/2 of short window,
-    so you can perform maintenance of your rigs.
+    해시량은 보내주신 해시가 인정(accpted)될때 풀에서 계산이 되기 시작합니다.<br/>
+    최근해시량은 30분 이내의 통계이며, 평균해시량은 3시간 이내의 통계입니다.
   </div>
   <div class="alert alert-info" role="alert">
-    <strong>Your bulk stats JSON API URL:</strong> <a href="/api/accounts/{{model.login}}">/api/accounts/{{model.login}}</a>
+    <strong>마이너상태를 JSON API 형태로 지원합니다:</strong> <a href="/api/accounts/{{model.login}}">/api/accounts/{{model.login}}</a>
   </div>
 </div>

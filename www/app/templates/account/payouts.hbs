@@ -5,9 +5,9 @@
     <table class="table table-condensed table-striped">
       <thead>
         <tr>
-          <th>Time</th>
-          <th>Tx ID</th>
-          <th>Amount</th>
+          <th>출금시간</th>
+          <th>거래 ID</th>
+          <th>수량</th>
         </tr>
       </thead>
       <tbody>
@@ -15,7 +15,7 @@
           <tr>
             <td>{{format-date-locale tx.timestamp}}</td>
             <td>
-              <a href="https://ethersocial.org/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
+              <a href="https://escblock.gonsmine.com/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
             </td>
             <td>{{format-balance tx.amount}}</td>
           </tr>
@@ -24,6 +24,6 @@
     </table>
   </div>
   {{else}}
-  <h3>No payouts yet</h3>
+  <h3>거래내역 없음</h3>
   {{/if}}
 </div>

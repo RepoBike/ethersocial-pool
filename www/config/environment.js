@@ -15,21 +15,21 @@ module.exports = function(environment) {
 
     APP: {
 		// Browser Title
-		BrowserTitle: 'EtherSocial Mining Pool-Asia',
+		BrowserTitle: 'mineesc.com',
 
       // API host and port
-      ApiUrl: '//pool-asia.ethersocial.org/',
+      ApiUrl: '//mineesc.com/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://pool-asia.ethersocial.org',
+      HttpHost: 'http://mineesc.com',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'pool-asia.ethersocial.org',
+      StratumHost: 'mineesc.com',
       StratumPort: 8008,
 
       // Fee and payout details
-      PoolFee: '1%',
+      PoolFee: '면제',
       PayoutThreshold: '1 ESC',
 
       // For network hashrate (change for your favourite fork)

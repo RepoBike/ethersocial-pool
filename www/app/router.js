@@ -16,7 +16,10 @@ Router.map(function() {
     this.route('pending');
   });
 
-  this.route('help');
+  this.route('help', function() {
+    this.route('port');
+  });
+  
   this.route('payments');
   this.route('miners');
   this.route('about');

@@ -1,15 +1,15 @@
 {{#if model.immature}}
-<h4>Immature Blocks</h4>
+<h4>확정 예정 블록</h4>
 
 <div class="table-responsive">
   <table class="table table-condensed table-striped">
     <thead>
       <tr>
-        <th>Height</th>
-        <th>Block Hash</th>
-        <th>Time Found</th>
-        <th>Variance</th>
-        <th>Reward</th>
+        <th>블록번호</th>
+        <th>블록Hash</th>
+        <th>발견시간</th>
+        <th>작업비율</th>
+        <th>보상</th>
       </tr>
     </thead>
     <tbody>
@@ -20,5 +20,5 @@
   </table>
 </div>
 {{else}}
-<h3>No immature blocks yet</h3>
+<h3>확정 예정 블록 없음</h3>
 {{/if}}

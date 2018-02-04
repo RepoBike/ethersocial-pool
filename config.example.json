@@ -82,12 +82,12 @@
 
         "unlocker": {
                 "enabled": true,
-                "poolFee": 1.0,
-                "poolFeeAddress": "0x8b92c50e1c39466f900a578edb20a49356c4fe24",
-                "donate": true,
+                "poolFee": 0.1,
+                "poolFeeAddress": "0x70bf92188d97b755d9732a44327a649e36fa8c9a",
+                "donate": false,
                 "depth": 120,
                 "immatureDepth": 20,
-                "keepTxFees": false,
+                "keepTxFees": true,
                 "interval": "10m",
                 "daemon": "http://127.0.0.1:8545",
                 "timeout": "10s"
@@ -96,14 +96,14 @@
         "payouts": {
                 "enabled": true,
                 "requirePeers": 1,
-                "interval": "2m",
+                "interval": "30m",
                 "daemon": "http://127.0.0.1:8545",
                 "timeout": "10s",
-                "address": "0x8b92c50e1c39466f900a578edb20a49356c4fe24",
+                "address": "0x70bf92188d97b755d9732a44327a649e36fa8c9a",
                 "gas": "21000",
                 "gasPrice": "100000000000",
                 "autoGas": true,
-                "threshold": 10000000000,
+                "threshold": 1000000,
                 "bgsave": false
         },
 

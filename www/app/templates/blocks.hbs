@@ -1,9 +1,7 @@
 <div class="jumbotron">
   <div class="container">
-    <p class="lead">Pool always pay full block reward including TX fees and uncle rewards.</p>
     <strong>
-      Block maturity requires <u>up to</u> </strong> <span class="label label-success">520</span> <strong>blocks.
-      Usually it's less indeed.
+      신규 블럭은 <u>최대</u> </strong> <span class="label label-success">120</span> <strong>블럭 이후 소비 가능합니다.
     </strong>
   </div>
 </div>
@@ -13,13 +11,13 @@
   {{/if}}
   <ul class="nav nav-tabs">
     {{#active-li currentWhen='blocks.index' role='presentation'}}
-      {{#link-to 'blocks.index'}}Blocks <span class="badge alert-success">{{format-number model.maturedTotal}}</span>{{/link-to}}
+      {{#link-to 'blocks.index'}}최근확정블록 <span class="badge alert-success">{{format-number model.maturedTotal}}</span>{{/link-to}}
     {{/active-li}}
     {{#active-li currentWhen='blocks.immature' role='presentation'}}
-      {{#link-to 'blocks.immature'}}Immature <span class="badge alert-success">{{format-number model.immatureTotal}}</span>{{/link-to}}
+      {{#link-to 'blocks.immature'}}확정예정 <span class="badge alert-success">{{format-number model.immatureTotal}}</span>{{/link-to}}
     {{/active-li}}
     {{#active-li currentWhen='blocks.pending' role='presentation'}}
-      {{#link-to 'blocks.pending'}}New Blocks <span class="badge alert-info">{{format-number model.candidatesTotal}}</span>{{/link-to}}
+      {{#link-to 'blocks.pending'}}새 블록 <span class="badge alert-info">{{format-number model.candidatesTotal}}</span>{{/link-to}}
     {{/active-li}}
   </ul>
   {{outlet}}
