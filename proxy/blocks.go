@@ -9,8 +9,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/ethersocial/ethersocial-pool/rpc"
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethereumsocial/ethersocial-pool/rpc"
+	"github.com/ethereumsocial/ethersocial-pool/util"
 )
 
 const maxBacklog = 3

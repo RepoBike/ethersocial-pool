@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethersocial/ethersocial-pool/rpc"
-	"github.com/ethersocial/ethersocial-pool/storage"
+	"github.com/ethereumsocial/ethersocial-pool/rpc"
+	"github.com/ethereumsocial/ethersocial-pool/storage"
 )
 
 func TestMain(m *testing.M) {

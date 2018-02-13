@@ -13,10 +13,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ethersocial/ethersocial-pool/policy"
-	"github.com/ethersocial/ethersocial-pool/rpc"
-	"github.com/ethersocial/ethersocial-pool/storage"
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethereumsocial/ethersocial-pool/policy"
+	"github.com/ethereumsocial/ethersocial-pool/rpc"
+	"github.com/ethereumsocial/ethersocial-pool/storage"
+	"github.com/ethereumsocial/ethersocial-pool/util"
 )
 
 type ProxyServer struct {

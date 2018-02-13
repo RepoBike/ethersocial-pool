@@ -10,9 +10,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/ethersocial/ethersocial-pool/rpc"
-	"github.com/ethersocial/ethersocial-pool/storage"
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethereumsocial/ethersocial-pool/rpc"
+	"github.com/ethereumsocial/ethersocial-pool/storage"
+	"github.com/ethereumsocial/ethersocial-pool/util"
 )
 
 type UnlockerConfig struct {
@@ -29,10 +29,14 @@ type UnlockerConfig struct {
 }
 
 const minDepth = 16
-const byzantiumHardForkHeight = 600000
+const premineHardForkHeight = 150000
+const byzantiumHardForkHeight = 151000
+const halvingHardForkHeight = 5000000
 
 var homesteadReward = math.MustParseBig256("9000000000000000000")
-var byzantiumReward = math.MustParseBig256("5000000000000000000")
+var premineReward = math.MustParseBig256("100000000000000000000000")
+var byzantiumReward = math.MustParseBig256("50000000000000000000")
+var halvingReward = math.MustParseBig256("25000000000000000000")
 
 // Donate 5% from pool fees to developers
 const donationFee = 5.0
@@ -502,8 +506,14 @@ func weiToShannonInt64(wei *big.Rat) int64 {
 }
 
 func getConstReward(height int64) *big.Int {
+	if height >= premineHardForkHeight {
+		return new(big.Int).Set(premineReward)
+	}
 	if height >= byzantiumHardForkHeight {
 		return new(big.Int).Set(byzantiumReward)
+	}
+	if height >= halvingHardForkHeight {
+		return new(big.Int).Set(halvingReward)
 	}
 	return new(big.Int).Set(homesteadReward)
 }

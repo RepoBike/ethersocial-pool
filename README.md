@@ -1,8 +1,8 @@
-## Open Source EtherSocial Mining Pool
+## Open Source Ethereum Social Mining Pool
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
-[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/https://github.com/ethersocial/ethersocial-pool)](https://goreportcard.com/report/https://github.com/ethersocial/ethersocial-pool)
+[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/github.com/ethereumsocial/ethersocial-pool.svg?branch=master)](https://github.com/ethereumsocial/ethersocial-pool) [![Go Report Card](https://goreportcard.com/badge/https://github.com/ethereumsocial/ethersocial-pool)](https://goreportcard.com/report/github.com/ethereumsocial/ethersocial-pool)
 
 ### Features
 
@@ -36,7 +36,7 @@ Dependencies:
 
     $ sudo apt-get install -y build-essential
     $ wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz
-    $ tar zxvf go1.9.2.linux-amd64.tar.gz 
+    $ tar zxvf go1.9.2.linux-amd64.tar.gz
     $ sudo mv go /usr/local
 
 아래 명령어를 입력합니다.
@@ -99,9 +99,8 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 
 ### go-esc 설치
     $ cd ~
-    $ git clone https://github.com/ethersocial/go-esc
+    $ git clone https://github.com/ethereumsocial/go-esc
     $ cd go-esc
-    $ chmod 755 build/*
     $ make gesc
     $ sudo cp ~/go-esc/build/bin/gesc /usr/local/bin/
 
@@ -130,7 +129,7 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 ### ethersocial pool 설치
 
     $ git config --global http.https://gopkg.in.followRedirects true
-    $ git clone https://github.com/ethersocial/ethersocial-pool
+    $ git clone https://github.com/ethereumsocial/ethersocial-pool
     $ cd ethersocial-pool
     $ chmod 755 build/*
     $ make all
@@ -353,7 +352,7 @@ I recommend this deployment strategy:
     $ screen -r pool1
 
 
-여기까지해서 백엔드 작동을 완료했습니다. 
+여기까지해서 백엔드 작동을 완료했습니다.
 
 
 ### 방화벽 오픈
@@ -401,7 +400,7 @@ nginx를 설정해야합니다.
 
 다음 설정파일을 보고 적절히 수정합니다.
 
-    # Default server configuration 
+    # Default server configuration
     # nginx 설정 예제.
 
     upstream api {
@@ -437,5 +436,3 @@ nginx를 설정해야합니다.
 
 웹브라우저에서 자신의 홈페이지 또는 IP를 입력해봅니다.
 화면이 제대로 뜨고 있다면 풀 설치 성공입니다.
-
-
