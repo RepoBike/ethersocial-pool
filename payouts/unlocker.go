@@ -34,9 +34,7 @@ const byzantiumHardForkHeight = 151000
 const halvingHardForkHeight = 5000000
 
 var homesteadReward = math.MustParseBig256("9000000000000000000")
-var premineReward = math.MustParseBig256("100000000000000000000000")
 var byzantiumReward = math.MustParseBig256("50000000000000000000")
-var halvingReward = math.MustParseBig256("25000000000000000000")
 
 // Donate 5% from pool fees to developers
 const donationFee = 5.0
@@ -506,14 +504,8 @@ func weiToShannonInt64(wei *big.Rat) int64 {
 }
 
 func getConstReward(height int64) *big.Int {
-	if height >= premineHardForkHeight {
-		return new(big.Int).Set(premineReward)
-	}
 	if height >= byzantiumHardForkHeight {
 		return new(big.Int).Set(byzantiumReward)
-	}
-	if height >= halvingHardForkHeight {
-		return new(big.Int).Set(halvingReward)
 	}
 	return new(big.Int).Set(homesteadReward)
 }

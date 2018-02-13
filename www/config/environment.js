@@ -14,9 +14,6 @@ module.exports = function(environment) {
     },
 
     APP: {
-		// Browser Title
-		BrowserTitle: 'mineesc.com',
-
       // API host and port
       ApiUrl: '//mineesc.com/',
 
