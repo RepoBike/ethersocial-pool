@@ -1,4 +1,4 @@
-## Open Source EtherSocial Mining Pool
+## Open Source Ethereum Social (ETSC) Mining Pool
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
@@ -20,6 +20,10 @@
 * [Ether-Proxy](https://github.com/sammy007/ether-proxy) HTTP proxy with web interface
 * [Stratum Proxy](https://github.com/Atrides/eth-proxy) for EtherSocial
 
+### Ethereum Social (ETSC) Pool list
+
+* [mineesc.com](https://mineesc.com)
+
 ### Building on Linux
 
 Dependencies:
@@ -34,76 +38,36 @@ Dependencies:
 
 ### go lang 설치
 
-    $ sudo apt-get install -y build-essential
-    $ wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz
-    $ tar zxvf go1.9.2.linux-amd64.tar.gz 
-    $ sudo mv go /usr/local
-
-아래 명령어를 입력합니다.
-
-    $ export GOROOT=/usr/local/go
-    $ export PATH=$GOROOT/bin:$PATH
-
-나중에 다시 로그인했을 때를 대비해 $HOME/.profile 의 제일 아래에 동일한 내용을 입력합니다.
-vi 사용법을 모르시면 구글에서 검색을 하시거나 또는 다른 에디터를 사용해도 됩니다.
-
-    $ vi ~/.profile
-
-    export PATH=$PATH:/usr/local/go/bin
-    export PATH="$HOME/.yarn/bin:$PATH"
+    $ sudo apt-get install -y build-essential golang-1.9-go
+    $ sudo ln -s /usr/lib/go-1.9/bin/go /usr/local/bin/go
+    $ sudo ln -s /usr/lib/go-1.9/bin/gofmt /usr/local/bin/gofmt
 
 ### redis-server 설치
 
-    $ cd ~
-    $ wget http://download.redis.io/redis-stable.tar.gz
-    $ tar xvzf redis-stable.tar.gz
-    $ cd redis-stable
-    $ make
-    $ sudo cp src/redis-server /usr/local/bin/
-    $ sudo cp src/redis-cli /usr/local/bin/
-    $ sudo mkdir /etc/redis
-    $ sudo mkdir /var/redis
-    $ sudo cp utils/redis_init_script /etc/init.d/redis_6379
-    $ sudo cp redis.conf /etc/redis/6379.conf
-
-    $ sudo vi /etc/redis/6379.conf
-
-다음 내용으로 수정합니다.
-
-    daemonize yes -> daemonize yes
-    dir ./ -> dir /var/redis/6379
-
-    $ sudo mkdir /var/redis/6379
-    $ sudo update-rc.d redis_6379 defaults
-    $ sudo /etc/init.d/redis_6379 start
+    $ sudo apt-get install redis-server
 
 ### redis-server 테스트
+
     $ redis-cli
     127.0.0.1:6379> ping
     PONG
     127.0.0.1:6379> exit
 
-
 ### nginx 설치
+
     $ sudo apt-get install nginx
 
-nginx 설정은 다른 구글문서를 참고해주세요.
-
 ### NODE 설치
-    $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-    $ sudo apt-get install nodejs
 
-혹시 안되시는 분은 다음을 먼저 실행 해주세요.
-
-    $ sudo apt-get install -y build-essential
+    $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    $ sudo apt-get install -y nodejs
 
 ### go-esc 설치
-    $ cd ~
-    $ git clone https://github.com/ethersocial/go-esc
-    $ cd go-esc
-    $ chmod 755 build/*
-    $ make gesc
-    $ sudo cp ~/go-esc/build/bin/gesc /usr/local/bin/
+
+    $ wget https://github.com/ethereumsocial/go-esc/releases/download/v0.2.1/ gesc-v0.2.1-linux-amd64.tar.gz
+    $ tar -xvzf gesc-v0.2.1-linux-amd64.tar.gz
+    $ cd gesc-v0.2.1-linux-amd64
+    $ cp gesc /usr/local/bin/gesc
 
 ### go-esc 실행
 우분투에서는 screen 명령어를 이용해서 활용을 하는 것이 터미널을 관리할 때 편리합니다. 구글에서 ubuntu screen 을 검색해서 사용법을 익혀주세요.
@@ -130,7 +94,7 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 ### ethersocial pool 설치
 
     $ git config --global http.https://gopkg.in.followRedirects true
-    $ git clone https://github.com/ethersocial/ethersocial-pool
+    $ git clone https://github.com/ethereumsocial/ethersocial-pool
     $ cd ethersocial-pool
     $ chmod 755 build/*
     $ make all
@@ -288,7 +252,7 @@ nginx 설정은 다른 구글문서를 참고해주세요.
     "poolFee": 1.0,
     // 풀피를 받을 주소입니다. 서버내의 지갑 주소로 해도 되지만 서버로의 해킹 공격이 많기 때문에 가능하면 서버 외부의 개인지갑 주소로 하는 것이 안전합니다.
     "poolFeeAddress": "0x8b92c50e1c39466f900a578edb20a49356c4fe24",
-    // 풀 제작자에게 풀피 중 일부를 기증하는 부분입니다. 현재 풀 피중의 5%를 기증하는 것으로 설정되어 있습니다. 만일 풀피가 1%라면 그 중의 5%이므로 0.05%가 개발자에게 갑니다.
+    // 풀 제작자에게 풀피 중 일부를 기증하는 부분입니다. 현재 풀 피중의 10%를 기증하는 것으로 설정되어 있습니다. 만일 풀피가 1%라면 그 중의 10%이므로 0.1%가 개발자에게 갑니다.
     "donate": true,
     // Unlock only if this number of blocks mined back
     "depth": 120,
@@ -353,7 +317,7 @@ I recommend this deployment strategy:
     $ screen -r pool1
 
 
-여기까지해서 백엔드 작동을 완료했습니다. 
+여기까지해서 백엔드 작동을 완료했습니다.
 
 
 ### 방화벽 오픈
@@ -401,7 +365,7 @@ nginx를 설정해야합니다.
 
 다음 설정파일을 보고 적절히 수정합니다.
 
-    # Default server configuration 
+    # Default server configuration
     # nginx 설정 예제.
 
     upstream api {
@@ -437,5 +401,3 @@ nginx를 설정해야합니다.
 
 웹브라우저에서 자신의 홈페이지 또는 IP를 입력해봅니다.
 화면이 제대로 뜨고 있다면 풀 설치 성공입니다.
-
-

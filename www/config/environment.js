@@ -14,23 +14,20 @@ module.exports = function(environment) {
     },
 
     APP: {
-		// Browser Title
-		BrowserTitle: 'EtherSocial Mining Pool-Asia',
-
       // API host and port
-      ApiUrl: '//pool-asia.ethersocial.org/',
+      ApiUrl: '//pool.ethereumsocial.kr/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://pool-asia.ethersocial.org',
+      HttpHost: 'http://pool.ethereumsocial.kr',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'pool-asia.ethersocial.org',
+      StratumHost: 'pool.ethereumsocial.kr',
       StratumPort: 8008,
 
       // Fee and payout details
       PoolFee: '1%',
-      PayoutThreshold: '1 ESC',
+      PayoutThreshold: '1 ETSC',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 14.4
