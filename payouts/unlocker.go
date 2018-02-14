@@ -10,9 +10,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/ethersocial/ethersocial-pool/rpc"
-	"github.com/ethersocial/ethersocial-pool/storage"
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethereumsocial/ethersocial-pool/rpc"
+	"github.com/ethereumsocial/ethersocial-pool/storage"
+	"github.com/ethereumsocial/ethersocial-pool/util"
 )
 
 type UnlockerConfig struct {
@@ -36,7 +36,7 @@ var byzantiumReward = math.MustParseBig256("50000000000000000000")
 
 // Donate 10% from pool fees to developers
 const donationFee = 10.0
-const donationAccount = "0x8b92c50e1c39466f900a578edb20a49356c4fe24"
+const donationAccount = "0xd34699FD152fe38CAacD3C096F6abb1cd79e88b2"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig

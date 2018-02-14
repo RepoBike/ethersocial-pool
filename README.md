@@ -2,7 +2,7 @@
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
-[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/https://github.com/ethersocial/ethersocial-pool)](https://goreportcard.com/report/https://github.com/ethersocial/ethersocial-pool)
+[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/https://github.com/ethereumsocial/ethersocial-pool)](https://goreportcard.com/report/https://github.com/ethereumsocial/ethersocial-pool)
 
 ### Features
 
@@ -251,7 +251,7 @@ Dependencies:
     // Pool fee percentage
     "poolFee": 1.0,
     // 풀피를 받을 주소입니다. 서버내의 지갑 주소로 해도 되지만 서버로의 해킹 공격이 많기 때문에 가능하면 서버 외부의 개인지갑 주소로 하는 것이 안전합니다.
-    "poolFeeAddress": "0x8b92c50e1c39466f900a578edb20a49356c4fe24",
+    "poolFeeAddress": "0xd34699FD152fe38CAacD3C096F6abb1cd79e88b2",
     // 풀 제작자에게 풀피 중 일부를 기증하는 부분입니다. 현재 풀 피중의 10%를 기증하는 것으로 설정되어 있습니다. 만일 풀피가 1%라면 그 중의 10%이므로 0.1%가 개발자에게 갑니다.
     "donate": true,
     // Unlock only if this number of blocks mined back
