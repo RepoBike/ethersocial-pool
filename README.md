@@ -22,7 +22,10 @@
 
 ### Ethereum Social (ETSC) Pool list
 
+* [pool.ethereumsocial.kr](https://pool.ethereumsocial.kr)
 * [mineesc.com](https://mineesc.com)
+* [reversegainz.info](http://etsc.reversegainz.info)
+
 
 ### Building on Linux
 
