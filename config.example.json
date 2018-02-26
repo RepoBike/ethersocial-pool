@@ -1,6 +1,6 @@
 {
         "threads": 2,
-        "coin": "esc",
+        "coin": "etsc",
         "name": "main",
 
         "proxy": {
