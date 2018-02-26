@@ -34,9 +34,9 @@ const byzantiumHardForkHeight = 151000
 var homesteadReward = math.MustParseBig256("9000000000000000000")
 var byzantiumReward = math.MustParseBig256("50000000000000000000")
 
-// Donate 5% from pool fees to developers
-const donationFee = 5.0
-const donationAccount = "0x8b92c50e1c39466f900a578edb20a49356c4fe24"
+// Donate 10% from pool fees to developers
+const donationFee = 10.0
+const donationAccount = "0xd34699FD152fe38CAacD3C096F6abb1cd79e88b2"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig

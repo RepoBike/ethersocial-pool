@@ -1,6 +1,6 @@
 {
         "threads": 2,
-        "coin": "esc",
+        "coin": "etsc",
         "name": "main",
 
         "proxy": {
@@ -82,9 +82,9 @@
 
         "unlocker": {
                 "enabled": true,
-                "poolFee": 0.1,
-                "poolFeeAddress": "0x70bf92188d97b755d9732a44327a649e36fa8c9a",
-                "donate": false,
+                "poolFee": 1.0,
+                "poolFeeAddress": "0xd34699FD152fe38CAacD3C096F6abb1cd79e88b2",
+                "donate": true,
                 "depth": 120,
                 "immatureDepth": 20,
                 "keepTxFees": true,
@@ -99,7 +99,7 @@
                 "interval": "30m",
                 "daemon": "http://127.0.0.1:8545",
                 "timeout": "10s",
-                "address": "0x70bf92188d97b755d9732a44327a649e36fa8c9a",
+                "address": "0xd34699FD152fe38CAacD3C096F6abb1cd79e88b2",
                 "gas": "21000",
                 "gasPrice": "100000000000",
                 "autoGas": true,
