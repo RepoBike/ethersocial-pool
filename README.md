@@ -4,7 +4,7 @@
 
 [![Discord](https://discordapp.com/api/guilds/417146776974262273/widget.png)](https://discord.gg/h6vsEuw) [![Build Status](https://travis-ci.org/ethereumsocial/ethersocial-pool.svg?branch=master)](https://travis-ci.org/ethereumsocial/ethersocial-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/ethereumsocial/ethersocial-pool)](https://goreportcard.com/report/github.com/ethereumsocial/ethersocial-pool)
 
-### For korean readme go to README-ko.md
+### For korean readme go to [README-ko.md](https://github.com/ethereumsocial/ethersocial-pool/blob/master/README_ko.md)
 
 ### Features  
 
@@ -26,7 +26,7 @@
 
 * [pool.ethereumsocial.kr](https://pool.ethereumsocial.kr)
 * [mineesc.com](https://mineesc.com)
-* [etsc.hpool.net/](http://etsc.hpool.net)
+* [etsc.hpool.net](http://etsc.hpool.net)
 * [esc.cminer.co](http://esc.cminer.co)
 * [leafpool.com](http://www.leafpool.com/ethereumsocial)
 * [reversegainz.info](http://etsc.reversegainz.info)
