@@ -2,7 +2,7 @@
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
-[![Discord](https://discordapp.com/api/guilds/417146776974262273/widget.png)](https://discord.gg/h6vsEuw) [![Build Status](https://travis-ci.org/ethereumsocial/ethersocial-pool.svg?branch=master)](https://travis-ci.org/ethereumsocial/ethersocial-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/ethersocial/ethersocial-pool)](https://goreportcard.com/report/github.com/ethereumsocial/ethersocial-pool)
+[![Discord](https://discordapp.com/api/guilds/417146776974262273/widget.png)](https://discord.gg/h6vsEuw) [![Build Status](https://travis-ci.org/ethereumsocial/ethersocial-pool.svg?branch=master)](https://travis-ci.org/ethereumsocial/ethersocial-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/ethereumsocial/ethersocial-pool)](https://goreportcard.com/report/github.com/ethereumsocial/ethersocial-pool)
 
 ### For korean readme go to README-ko.md
 
