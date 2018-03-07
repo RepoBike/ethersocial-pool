@@ -18,19 +18,19 @@ module.exports = function(environment) {
       ApiUrl: '//mineesc.com/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://mineesc.com',
+      HttpHost: 'http://mine.mineesc.com',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'mineesc.com',
+      StratumHost: 'mine.mineesc.com',
       StratumPort: 8008,
 
       // Fee and payout details
-      PoolFee: '면제',
-      PayoutThreshold: '1 ESC',
+      PoolFee: '1%',
+      PayoutThreshold: '1 ETSC',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 14.4
+      BlockTime: 14.0
     }
   };
 
