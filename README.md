@@ -336,7 +336,7 @@ I recommend this deployment strategy:
 ### Run Pool
 It is required to run pool by serviced. If it is not, the terminal could be stopped, and pool doesn’t work.
 
-    $ sudo nano /etc/systemd/system/ethersocial.service
+    $ sudo nano /etc/systemd/system/etherpool.service
 
 Copy the following example
 
